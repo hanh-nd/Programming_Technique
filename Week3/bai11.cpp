@@ -34,9 +34,9 @@ void TRY(int k){
             
             if(k == numberOfDestination - 2) {
             	solution();
-			} else if (curr + cmin * (n - numberOfDestination + 3)) {
-            	TRY(k + 1);
-			}
+		} else if (curr + cmin * (n - numberOfDestination + 3)) {
+            		TRY(k + 1);
+		}
 
             mark[destinationList[i]] = 0;
             curr -= c[x[k - 1]][destinationList[i]];
